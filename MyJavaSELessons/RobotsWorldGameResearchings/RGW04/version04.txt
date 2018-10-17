@@ -1,0 +1,2 @@
+add: Task class,
+refactor: TaskFactory, TaskGenerator

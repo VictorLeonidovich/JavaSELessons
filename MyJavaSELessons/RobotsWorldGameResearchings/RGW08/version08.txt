@@ -1,0 +1,3 @@
+rename: enum RobotType into RobotTypeUtils, SimpleRobotType into RobotTypeTarget
+refactor: all related classes
+add function: create own robot, send task to concrete robot

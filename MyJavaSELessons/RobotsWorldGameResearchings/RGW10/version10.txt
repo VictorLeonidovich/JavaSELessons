@@ -1,0 +1,2 @@
+add: class Validator, tasks sorting chain - taskmanagement package
+refactoring: split Logging

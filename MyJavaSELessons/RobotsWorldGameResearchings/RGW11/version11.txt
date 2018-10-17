@@ -1,0 +1,2 @@
+add: Configuration.class; more logs; RobotFacadeController; TaskFacadeController
+refactoring: Mission replaced as Task and vice versa;

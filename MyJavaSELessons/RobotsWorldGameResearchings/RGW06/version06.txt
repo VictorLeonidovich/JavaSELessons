@@ -1,0 +1,3 @@
+add: mission(killyourself), enum Mission
+refactor: ActivityTracker(Runnable), Robot(timeOut), ?RobotType(task for all robots) - will be later
+refactor: TaskGenerator

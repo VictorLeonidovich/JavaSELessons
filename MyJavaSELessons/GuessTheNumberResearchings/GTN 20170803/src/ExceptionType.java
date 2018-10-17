@@ -1,0 +1,6 @@
+
+public enum ExceptionType {
+	STRING_TO_INT_CONVERTING_EXCEPTION,
+	OUT_OF_OBJECT_RANGE_EXCEPTION;
+
+}

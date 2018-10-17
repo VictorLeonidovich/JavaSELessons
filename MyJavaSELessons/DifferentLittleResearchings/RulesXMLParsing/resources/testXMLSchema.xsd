@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NewXMLSchema" xmlns:tns="http://www.example.org/NewXMLSchema" elementFormDefault="qualified">
+
+    <element name="rules" type="tns:rule"></element>
+    
+    <complexType name="rule">
+    	<attribute name="name" use="required">
+    		<simpleType>
+    			<restriction base="string">
+    				<length value="1"></length>
+    				<pattern value="[a-z]"></pattern>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="type">
+    		<simpleType>
+    			<restriction base="string">
+    				<enumeration value="child"></enumeration>
+    				<enumeration value="sub"></enumeration>
+    				<enumeration value="root"></enumeration>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	<attribute name="weight" use="required">
+    		<simpleType>
+    			<restriction base="int">
+    				<minExclusive value="1"></minExclusive>
+    				<maxExclusive value="99"></maxExclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    </complexType>
+</schema>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : index2
+    Created on : 06.01.2018, 22:41:38
+    Author     : Victor
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+          xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
+    <form method="POST" action="servlettaskreciever">
+
+        <jsp:element name="text">
+            <jsp:attribute name="lang">EN</jsp:attribute>
+            <jsp:body>Please, enter number of tasks: </jsp:body>
+        </jsp:element>
+
+        <input type="text" name="taskQuantity" id="taskQuantity" size="10" /> 
+
+        <jsp:element name="text">
+            <jsp:attribute name="lang">EN</jsp:attribute>
+            <jsp:body>Choose task from list: </jsp:body>
+        </jsp:element>
+
+        <select name="taskContent">
+            <c:forEach items="${taskContent}" var="task">
+                <option value ="${task}">${task.getTaskContent()}</option>
+            </c:forEach>
+        </select>
+
+        <jsp:element name="text">
+            <jsp:attribute name="lang">EN</jsp:attribute>
+            <jsp:body>Choose recipient from list: </jsp:body>
+        </jsp:element>
+
+        <select name="taskRecipient">
+            <c:forEach items="${taskRecipient}" var="recipient">
+                <option value ="${recipient}">${recipient.getTaskRecipient()}</option>
+            </c:forEach>
+        </select>
+
+        <input type="submit"/>
+    </form>
+</jsp:root>

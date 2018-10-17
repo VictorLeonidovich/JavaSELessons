@@ -1,0 +1,2 @@
+*.jar
+!MyJavaSELessons/**/*.jar

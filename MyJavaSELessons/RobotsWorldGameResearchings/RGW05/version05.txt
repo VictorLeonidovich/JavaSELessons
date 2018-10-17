@@ -1,0 +1,2 @@
+add: GameController, RobotType (constructor), log4j logging for debugging
+refactor: RobotFactory and all other classes

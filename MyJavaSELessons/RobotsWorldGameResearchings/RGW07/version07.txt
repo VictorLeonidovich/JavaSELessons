@@ -1,0 +1,2 @@
+add: enum SimpleRobotType
+refactor: TaskGenerator(generate tasks for all robots)
